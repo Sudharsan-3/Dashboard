@@ -1,0 +1,23 @@
+[
+    {
+        "id" : 1,
+        "image" : "./public/add-category-svgrepo-com.svg",
+        "gradiant" :"",
+        "buttonText":"add",
+        "type":"global"
+},
+    {
+        "id" : 2,
+        "image" : "./public/edit-4-svgrepo-com.svg",
+        "gradiant" :"",
+        "buttonText":"edit",
+        "type":"common"
+},
+    {
+        "id" : 3,
+        "image" : "./public/delete-svgrepo-com.svg",
+        "gradiant" :"",
+        "buttonText":"delete",
+        "type":"common"
+}
+]
