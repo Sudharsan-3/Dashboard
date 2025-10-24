@@ -25,13 +25,25 @@ const App = () => {
         >
           {/* Action Bar */}
           <div className="w-full max-w-5xl flex flex-col sm:flex-row justify-between items-center gap-4 mb-8 bg-black/50 backdrop-blur-md shadow-lg border border-pink-400/20 p-5 rounded-2xl">
-            <div className="flex flex-wrap gap-4 items-center justify-center sm:justify-start">
-              <Search />
-              <Sorting />
-              <Filtering />
-            </div>
-            <CreateData />
-          </div>
+
+  {/* Top row on mobile, left/right on desktop */}
+  <div className="flex flex-col md:flex-row w-full md:items-center md:justify-between gap-4">
+
+    {/* Left group: Sorting + Filtering + CreateData */}
+    <div className="flex flex-wrap gap-4 justify-center items-center sm:justify-start flex-1">
+      <Sorting />
+      <Filtering />
+      <CreateData />
+    </div>
+
+    {/* Search goes separately */}
+    <div className="flex justify-center sm:justify-center w-full sm:w-auto mt-4 sm:mt-0">
+      <Search />
+    </div>
+    
+  </div>
+</div>
+
 
           {/* Posts Section */}
           <div className="w-full max-w-5xl">
